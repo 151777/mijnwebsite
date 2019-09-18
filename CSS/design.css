@@ -1,3 +1,23 @@
 body {
-  background-color: #93B874;
+    background-color: #93B874;
+    text-align: center;
+        font-family: serif, monospace;
+}
+
+#Info {
+    background-color: yellowgreen;
+    text-align: center;
+}
+#Foto {
+   text-align: center;
+    background-color: yellowgreen;
+
+    border-right: 100px;
+
+}
+
+footer {
+    text-align: right;
+    font-family: serif, monospace;
+    
 }
