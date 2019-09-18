@@ -27,7 +27,7 @@ footer {
 
 }
 
-a.class1:link, a:visited {
+a.class1:link, a.class1:visited {
   background-color: #f44336;
   color: white;
   padding: 14px 25px;
@@ -36,7 +36,7 @@ a.class1:link, a:visited {
   display: inline-block;
 }
 
-a.class1:hover, a:active {
+a.class1:hover, a.class1:active {
   background-color: red;
 }
 
@@ -65,5 +65,5 @@ li a:hover:not(.active) {
 }
 
 .active {
-  background-color: #4CAF50;
+  background-color: red;
 }
