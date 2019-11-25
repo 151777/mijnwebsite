@@ -5,20 +5,22 @@
   <meta charset="UTF-8">
   <title>zUniqBeats</title>
   <link href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" rel="stylesheet"><link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
  <header id="parallax_main" class="collapsing-parallax">
-	<div id="nav-button" class="menu-trigger">
+ 
+	<div id="nav-button" class="menu-trigger" onclick="openNav()">
 		 <div class="bar"></div>
 		 <div class="bar"></div>
 		 <div class="bar"></div>
     </div>
 
-    <div class="navinhoud">
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+    <div id="navidinhoud" class="navinhoud">
+        <a href="#home"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="#services"><i class="fa fa-fw fa-wrench"></i> Services</a>
+        <a href="#clients"><i class="fa fa-fw fa-user"></i> Clients</a>
+        <a href="#contact"><i class="fa fa-fw fa-envelope"></i> Contact</a>
     </div>
 
     <div id="toolbar_main" class="toolbar-collapsing-parallax">
@@ -34,7 +36,7 @@
     <div class="fab">
     <!-- Main Button -->
     <div id="main-fab" color="#" class="fab-button xLarge">
-        <i class="fa fa-plus"></i>
+        <i class="fa fa"></i>
     </div>
     </div>
  </header>

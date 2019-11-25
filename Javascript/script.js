@@ -34,5 +34,19 @@
             $(this).removeClass('active');
             $('.navinhoud').removeClass('active');
         }
-	});
+    });
+    
+
+
 })(jQuery);
+
+function openNav() {
+  document.getElementById("navidinhoud").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("navidinhoud").style.width = "0";
+}
+
+
+

@@ -1,10 +1,24 @@
 body,
+
 html {
 	width: 100%;
 	height: 150%;
+    overflow: scroll;
+    overflow-x: hidden;
 }
+
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
 body {
 	background: #F1F1F1;
+    
 }
 @font-face {
 	font-family: Roboto;
@@ -119,6 +133,7 @@ title.secondary{
 	color: #fff;
 	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16),
 		0px 2px 10px 0px rgba(0, 0, 0, 0.12);
+    transition: 0.3s;
 }
 
 .fab-button:hover {
@@ -170,6 +185,7 @@ title.secondary{
 }
 /* Navigation Button w/ Animation */
 .menu-trigger{
+    z-index: 999;
 	cursor: pointer;
 	position: absolute;
 	top: 25px;
@@ -340,13 +356,32 @@ header.collapsing-parallax + .site-main{
 
 .navinhoud {
     transform: translateX(-100%);
-    transition: .4s all ease;
+    transition: .5s all ease;
     position: fixed;
     top: 0;
     left: 0;
+    height: 100%;
+    width: 0;
+    z-index: 1;
+    background-color: rgb(17, 17, 17);
+    overflow-x: hidden;
+    padding-top: 60px;
 }
 
 .navinhoud.active {
     transform: translateX(0%);
 }
 
+.navinhoud a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+
+.navinhoud a:hover {
+  color: #f1f1f1;
+}
