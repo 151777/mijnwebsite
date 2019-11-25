@@ -27,6 +27,12 @@
 	$pTitle.css('transform','scale('+scale+')');
 });
 	$pNavTrigger.click(function(){
-		$(this).toggleClass('active');
+		if(!$('#nav-button').hasClass('active')) {
+            $(this).addClass('active');
+            $('.navinhoud').addClass('active');
+        } else {
+            $(this).removeClass('active');
+            $('.navinhoud').removeClass('active');
+        }
 	});
 })(jQuery);
