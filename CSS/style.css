@@ -112,7 +112,9 @@ title.secondary{
 .fab-button {
 	display: table;
 	cursor: pointer;
-	background: #00cc99;
+	background: url("https://workingwithdog.com/wp-content/uploads/2016/05/new_instagram_logo-1024x1024.jpg")
+		center center no-repeat;
+    background-size: cover;
 	border-radius: 50%;
 	color: #fff;
 	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16),
