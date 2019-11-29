@@ -1,5 +1,8 @@
-body,
+* {
+    box-sizing: border-box;
+}
 
+body,
 html {
 	width: 100%;
 	height: 150%;
@@ -249,7 +252,6 @@ header.collapsing-parallax + .site-main{
 	text-align: left;
 	position: relative;
 	width:28%;
-	max-height: 350px;
 	margin: 0 15px 20px 15px;
 	box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.18),
 		0px 4px 14px 0px rgba(0, 0, 0, 0.15);
@@ -271,7 +273,9 @@ header.collapsing-parallax + .site-main{
 }
 .cardview .content{
 	position: relative;
-	padding: 15px 20px;
+    display: flex;
+    padding: 15px 20px;
+    flex-direction: column;
 }
 .cardview h1{
 	font-size: 19px;
