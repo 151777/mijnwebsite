@@ -86,21 +86,22 @@ p {
 	position: relative;
 	display: table-cell;
 	float: left;
-	width: 52px;
-	height: 52px;
-	background: url("http://zuniq.epizy.com/CSS/logo2.PNG")
+	width: 60px;
+	height: 60px;
+	background: url("https://cdn.pixabay.com/photo/2017/10/25/18/10/peer-review-icon-2888794_960_720.png")
 		center center no-repeat;
 	background-size: cover;
 	border-radius: 50%;
 	margin-right: 0.9em;
-    border: rgba(37, 37, 37, 0.774) solid 1px;
-        margin-top: 10px;
+    border: rgba(168, 168, 168, 0.795) solid 1px;
+    margin-top: 10px;       
 }
 .title-container{
 	position: relative;
 	display: table-cell;
 	float: left;
-        margin-top: 10px;
+    margin-top: 10px;
+    text-align: center;
 }
 title {
 	display: block;
@@ -129,7 +130,7 @@ title.secondary{
 .fab-button {
 	display: table;
 	cursor: pointer;
-	background: url("https://cdn2.iconfinder.com/data/icons/2018-social-media-app-logos/1000/2018_social_media_popular_app_logo_instagram-512.png")
+	background: url("http://salomatic.de/wp-content/uploads/2017/08/checkmark-flat.png")
 		center center no-repeat;
     background-size: cover;
 	border-radius: 50%;
@@ -336,12 +337,12 @@ header.collapsing-parallax + .site-main{
 	float: left;
 	width: 52px;
 	height: 52px;
-	background: url("http://zuniq.epizy.com/CSS/logo2.PNG")
+	background: url("https://cdn.pixabay.com/photo/2017/10/25/18/10/peer-review-icon-2888794_960_720.png")
 		center center no-repeat;
 	background-size: cover;
 	border-radius: 50%;
 	margin-right: 0.9em;
-    border: rgba(37, 37, 37, 0.774) solid 1px;
+    border: rgba(168, 168, 168, 0.795) solid 1px;
     
 }
     .title-container{
@@ -395,3 +396,5 @@ header.collapsing-parallax + .site-main{
 .navinhoud a:hover {
   color: #f1f1f1;
 }
+
+
