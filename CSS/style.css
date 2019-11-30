@@ -279,8 +279,8 @@ header.collapsing-parallax + .site-main{
 .site-main .inner{
 	text-align: center;
 }
-.row{}
-.row::after, .row::before {
+.rowmain{}
+.rowmain::after, .rowmain::before {
     content: '';
     display: block;
     clear: both;
@@ -347,11 +347,12 @@ header.collapsing-parallax + .site-main{
 	}
 }
 @media screen and (max-width: 590px){
-	.cardview{
+	.cardview {
 		width: 80%;
 	}
-	@media screen and (max-width: 530px){
-	.cardview{
+}
+@media screen and (max-width: 530px){
+	.cardview {
 		width: 85%;
 		margin: 15px auto;
 	}
@@ -400,8 +401,25 @@ header.collapsing-parallax + .site-main{
 	background-size: cover;
 	z-index: 99;
     }
+
+
+
+
+    .row {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: -20px;
+    transform: translateY(10px);
+    }
+
+    .buttontext {
+    margin-left: 5px;
+    margin-top: 2px;
+    }
 }
-}
+
+
 
 .navinhoud {
     transform: translateX(-100%);
@@ -435,4 +453,136 @@ header.collapsing-parallax + .site-main{
   color: #f1f1f1;
 }
 
+.show-cart li {
+  display: flex;
+}
 
+.cart {
+    
+}
+
+
+
+.shoppingcart {
+    
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+  transform: translateX(-20px)
+  
+}
+
+.modal {
+    
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 99999; /* Sit on top */
+  left: ;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+
+.modal-content {
+    
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+
+
+.shopping-cart {
+    
+  width: 50px;
+  height: 100px;
+  
+  position: relative;
+  
+  background-image: linear-gradient(
+    transparent 37%,
+    rgb(7, 38, 67) 0,
+    rgb(7, 38, 67) 40%,
+    transparent 0
+  );
+  background-origin: border-box;
+}
+
+.buttontext {
+    z-index: ;
+    float: left;
+    text-align: center;
+    transform: translate(-30px, 40px);
+    font-family: 'Alfa Slab One';
+}
+
+.shopping-cart::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 13px;
+  width: 20px;
+  background-image: linear-gradient(
+    transparent 23%,
+    rgb(7, 38, 67) 0,
+    rgb(7, 38, 67) 30%,
+    transparent 0,
+    transparent 60%,
+    rgb(7, 38, 67) 0,
+    rgb(7, 38, 67) 70%,
+    transparent 0
+  ), linear-gradient(
+    90deg,
+    transparent 25%,
+    rgb(7, 38, 67) 0,
+    rgb(7, 38, 67) 30%,
+    transparent 0,
+    transparent 65%,
+    rgb(7, 38, 67) 0,
+    rgb(7, 38, 67) 70%,
+    transparent 0
+  );
+  border: 3px solid rgb(7, 38, 67);
+  outline: 3px solid rgb(0, 180, 255);
+  box-shadow: -2px 2px 0 4px rgb(7, 38, 67);
+  transform: perspective(25px) rotateX(-25deg) translate(-33%, -50%);
+  transform-origin: left top;
+}
+
+.shopping-cart::after {
+  content: 'o  o';
+  font-size: 16px;
+  color: rgb(7, 38, 67);
+  white-space: pre;
+  font-weight: bold;
+  font-family: sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, 38%);
+}
