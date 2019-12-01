@@ -23,6 +23,221 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* The Collapsing Parallax */
+.collapsing-parallax {
+	position: fixed;
+	height: 350px;
+	width: 100%;
+	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.267)),  url("https://images.unsplash.com/photo-1512930366077-deb21fed7bc4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2114&q=80")
+		center center no-repeat;
+	background-color: rgb(33,14,61);
+	background-size: cover;
+	z-index: 99;
+}
+.toolbar-collapsing-parallax{
+	height: 100%;
+	width: 100%;
+}
+/* Collapsing Title */
+.title-collapsing-parallax {
+	position: absolute;
+	display: table;
+	height: 8vh;
+	width: 50%;
+	bottom: 0;
+	left: 0;
+	margin: 0 2em;
+}
+.title-collapsing-parallax .avatar {
+	position: relative;
+	display: table-cell;
+	float: left;
+	width: 60px;
+	height: 60px;
+	background: url("https://cdn.pixabay.com/photo/2017/10/25/18/10/peer-review-icon-2888794_960_720.png")
+		center center no-repeat;
+	background-size: cover;
+	border-radius: 50%;
+	margin-right: 0.9em;
+    border: rgba(168, 168, 168, 0.795) solid 1px;
+    margin-top: 10px;       
+}
+.title-container{
+	position: relative;
+	display: table-cell;
+	float: left;
+    margin-top: 10px;
+    text-align: center;
+}
+title {
+	display: block;
+	height: auto;
+	width: auto;
+	color: white;
+	    -webkit-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -webkit-transition: all .3s cubic-bezier(0.4,0,0.2,1);
+    transition: all .3s cubic-bezier(0.4,0,0.2,1);
+    -webkit-transition-property: color,bottom,transform;
+    transition-property: color,bottom,transform;
+}
+title.main{
+	font-size: 1.5em
+}
+title.secondary{
+	font-size: 0.9em
+}
+.fab {
+	position: absolute;
+	bottom: -1.5em;
+	right: 5vw;
+}
+/* The Fab */
+.fab-button {
+	display: table;
+	cursor: pointer;
+	background: url("http://salomatic.de/wp-content/uploads/2017/08/checkmark-flat.png")
+		center center no-repeat;
+    background-size: cover;
+	border-radius: 50%;
+	color: #fff;
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16),
+		0px 2px 10px 0px rgba(0, 0, 0, 0.12);
+    transition: 0.3s;
+}
+
+.fab-button:hover {
+	box-shadow: 0px 5px 11px 0px rgba(0, 0, 0, 0.18),
+		0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.fab-button i {
+	width: 10px;
+	display: table-cell;
+	left: 0;
+	right: 0;
+	vertical-align: middle;
+	margin: 0 auto;
+	transform: translateX(30%);
+}
+.fixed-button {
+	position: fixed;
+	top: 70%;
+	right: 45%;
+}
+.fab-button.xSmall {
+	width: 1.75rem;
+	height: 1.75rem;
+	font-size: 0.75rem;
+}
+
+.fab-button.small {
+	width: 2.45rem;
+	height: 2.45rem;
+	font-size: 1.2rem;
+}
+
+.fab-button.medium {
+	width: 2.85rem;
+	height: 2.85rem;
+	font-size: 1.2rem;
+}
+
+.fab-button.large {
+	width: 3.45rem;
+	height: 3.45rem;
+	font-size: 1.6rem;
+}
+
+.fab-button.xLarge {
+	width: 3.75rem;
+	height: 3.75rem;
+	font-size: 1.8rem;
+}
+/* Navigation Button w/ Animation */
+.menu-trigger{
+    z-index: 999;
+	cursor: pointer;
+	position: absolute;
+	top: 25px;
+	left: 30px;
+	width: 26px;
+	height: 20px;
+	-webkit-transition: 0.35s ease all;
+   -moz-transition: 0.35s ease all;
+   -o-transition: 0.35s ease all;
+   transition: 0.35s ease all;
+}
+.menu-trigger > .bar{
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 2.3px;
+	background-color: white;
+	-webkit-transition: 0.36s ease-out all;
+   -moz-transition: 0.36s ease-out all;
+   -o-transition: 0.36s ease-out all;
+   transition: 0.36s ease-out all;
+}
+	.menu-trigger > .bar:first-child{
+		top: 0;
+	}
+	.menu-trigger > .bar:nth-child(2){
+		top: 8px;
+	}
+	.menu-trigger > .bar:nth-child(3){
+		top: 16px;
+	}
+.menu-trigger.active{
+	transform: rotate(180deg);
+}
+.menu-trigger.active > .bar:first-child{
+	   transform-origin: 60% bottom;
+		transform: rotate(40deg) scaleX(0.7) translateX(8px);
+}
+.menu-trigger.active > .bar:nth-child(3){
+	   transform-origin: 60% top;
+		transform: rotate(-40deg) scaleX(0.7) translateX(8px);
+}
+
+header.collapsing-parallax + .site-main{
+	padding-top: 350px;
+}
+
+.navinhoud {
+    transform: translateX(-100%);
+    transition: .5s all ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    z-index: 1;
+    background-color: rgb(17, 17, 17);
+    overflow-x: hidden;
+    padding-top: 60px;
+}
+
+.navinhoud.active {
+    transform: translateX(0%);
+}
+
+.navinhoud a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+
+.navinhoud a:hover {
+  color: #f1f1f1;
+}
+
+
 @media (max-width: 600px) {
   body {
     font-size: 70%;
