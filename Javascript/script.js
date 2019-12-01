@@ -38,6 +38,10 @@
     
 
 
+    $(".add-to-cart").click(function() {
+  $('.shoppingcart').addClass('shoppingcart-active');
+});
+
 })(jQuery);
 
 function openNav() {
@@ -280,4 +284,5 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
 
