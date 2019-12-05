@@ -601,3 +601,15 @@ header.collapsing-parallax + .site-main{
   left: 50%;
   transform: translate(-40%, 38%);
 }
+
+.topinner {
+    background: repeating-linear-gradient(
+  45deg,
+  #606dbc,
+  #606dbc 10px,
+  #465298 10px,
+  #465298 20px
+);
+    display: flex;
+    position: absolute
+}

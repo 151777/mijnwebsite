@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="CSS/stylewaarom-reviews.css">
+  <link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Review2day</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+
+
+
+
+<section class="wrap-3d">
+  
+  <div class="intro">
+    <h1>WAAROM GOOGLE REVIEWS?</h1>
+  </div>
+  
+  <div class="item-3d">
+    <span class="ground"></span>
+    <figure class="item-content group">
+      <div class="item-img">
+        <img src="http://www.festivalclaca.cat/pics/b/14/144102_5-star-rating-icon-png.png" alt="" />
+      </div>
+      <figcaption class="item-caption">
+        <p>
+          <strong>Waarom reviews kopen?</strong><br>
+          Reviews kunnen de conversie van een webwinkel met maar liefst 14-76% vergroten.<br>
+        </p>
+        <p>
+          <strong>Maar waarom zijn die reviews toch eigenlijk zo belangrijk?</strong><br>
+          Een ervaring van een andere consument blijft belangrijk om het vertrouwen van een consument te winnen.<br>
+          Hier kunt u op inspelen door Google reviews van andere consumenten op uw bedrijfspagina te tonen.
+        </p>
+        <p>
+          <a href="reviews-kopen.html">Google Reviews Kopen</a><br>
+        </p>
+      </figcaption>
+    </figure>
+  </div>
+  
+  <div class="item-3d">
+    <span class="ground"></span>
+    <figure class="item-content group">
+      <div class="item-img">
+        <img src="https://images.vexels.com/media/users/3/127297/isolated/preview/f060515a33f1891a0f67236bc87054cc-empresario-sosteniendo-el-tablero-de-la-carta-mayor-by-vexels.png" alt="" />
+      </div>
+      <figcaption class="item-caption">
+        <p>
+          <strong>Voordelen van Google Reviews</strong><br>
+          1. Positief imago<br>
+          2. Hoger organisch scoren in Google<br>
+          3. Potentiële klanten kiezen eerder voor uw bedrijf<br>
+          4. Hoger scoren dan uw concurrent
+        </p>
+        <p>
+          <strong></strong><br>
+          Nooit meer last van negatieve reviews!<br>
+          Geef uw bedrijf een boost!
+        </p>
+        <p>
+          <a href="reviews-kopen.html">Google Reviews Kopen</a><br>
+        </p>
+      </figcaption>
+    </figure>
+  </div>
+  
+  <div class="item-3d">
+    <span class="ground"></span>
+    <figure class="item-content group">
+      <div class="item-img">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Handshake_Flat_Icon.svg/1024px-Handshake_Flat_Icon.svg.png" alt="" />
+      </div>
+      <figcaption class="item-caption">
+        <p>
+          <strong>Eerlijk of oneerlijk</strong><br>
+          We nemen een restaurant als voorbeeld. Hier gaat men naar toe om lekker te eten.<br>
+          Wie tevreden is gaat dat meestal niet op internet uiten,<br>
+          omdat lekker eten iets is wat je bij een restaurant verwacht.<br>
+        </p>
+        <p>
+          Wanneer het eten tegenvalt, en dus ook de verwachting, dan gaan mensen redelijk snel dit wel op internet plaatsen, <br>want ze hebben immers betaald voor lekker eten.
+        </p>
+        <p>
+          <a href="reviews-kopen.html">Google Reviews Kopen</a><br>
+        </p>
+      </figcaption>
+    </figure>
+  </div>
+  
+  <div class="item-3d">
+    <span class="ground"></span>
+    <figure class="item-content group">
+      <div class="item-img">
+        <img src="http://sugar.gent/uploads/sirtrevor/01_animat-barchart-color.gif" alt="" />
+      </div>
+      <figcaption class="item-caption">
+        <p>
+          <strong>Voordelen van Google Reviews</strong><br>
+          1. Positief imago<br>
+          2. Hoger organisch scoren in Google<br>
+          3. Potentiële klanten kiezen eerder voor uw bedrijf<br>
+          4. Hoger scoren dan uw concurrent
+        </p>
+        <p>
+          <strong></strong><br>
+          Nooit meer last van negatieve reviews!<br>
+          Geef uw bedrijf een boost!
+        </p>
+        <p>
+          <a href="reviews-kopen.html">Google Reviews Kopen</a><br>
+        </p>
+      </figcaption>
+    </figure>
+  </div>
+
+  <footer class="footer">
+    <p>COPYRIGHT © 2019 CREDITS <a href="index.html">Review2day</a></p>
+  </footer>
+</section>
+
+
+    <div class="shoppingcart">
+        <div class="row">
+            <div class="col">
+            <div type="button" class="shopping-cart" onclick="document.getElementById('id01').style.display='block'" data-toggle="modal" data-target="#cart"><div class="buttontext"><span class="total-count"></span></div></div>
+        </div>
+    </div>
+
+
+
+
+
+<!-- partial -->
+</body>
+</html>
