@@ -10,6 +10,10 @@ html {
     overflow-x: hidden;
 }
 
+section {
+    position: relative;
+}
+
 ::-webkit-scrollbar {
     width: 0px;  /* Remove scrollbar space */
     background: transparent;  /* Optional: just make scrollbar invisible */
@@ -605,11 +609,13 @@ header.collapsing-parallax + .site-main{
 .topinner {
     background: repeating-linear-gradient(
   45deg,
-  #606dbc,
-  #606dbc 10px,
-  #465298 10px,
-  #465298 20px
+  #e7e7e7,
+  #cfcfcf 5px,
+  #b6b6b6 5px,
+  #cccccc 10px
 );
     display: flex;
-    position: absolute
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
