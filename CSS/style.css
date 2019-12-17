@@ -504,17 +504,48 @@ header.collapsing-parallax + .site-main{
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  padding-top: 60px;
+  padding: 60px;
 }
 
 /* Modal Content/Box */
 
 .modal-content {
     
-  background-color: #fefefe;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+    background-color: #fefefe;
+    margin: 5% auto 5% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    height: 80%
+}
+
+.mainmodal-header {
+    background-color: #fefefe;
+    height: 100px;
+    border-bottom: 3px solid #E8E8E8;
+    text-align: center;
+}
+
+.mainmodal-body {
+    margin-top: 20px;
+
+}
+
+.mainmodal-footer {
+
+}
+
+.mainmodal-title {
+    font-size: 2rem;
+    padding-top: 2%
+}
+
+
+.close {
+    text-align: right;
+    float: right;
+    top: 0;
+    right: 0;
+    transform: translateY(-175%);   
 }
 
 /* Add Zoom Animation */
