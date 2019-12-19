@@ -219,8 +219,8 @@ function displayCart() {
   var output = "";
   for(var i in cartArray) {
     output += "<tr>"
-      + "<td>" + cartArray[i].name + "</td>" 
-      + "<td>(" + cartArray[i].price + ")</td>"
+      + "<td>" + cartArray[i].name + "<span> x Google Review</span>" + "</td>" 
+      + "<td>(" + "<span>€ </span>" + cartArray[i].price + ")</td>"
       + "<td><div class='input-group'><button class='minus-item input-group-addon btn btn-primary' data-name=" + cartArray[i].name + ">-</button>"
       + "<input type='number' class='item-count form-control' data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'>"
       + "<button class='plus-item btn btn-primary input-group-addon' data-name=" + cartArray[i].name + ">+</button></div></td>"
@@ -257,12 +257,7 @@ $('.show-cart').on("click", ".plus-item", function(event) {
 })
 
 // Item count input
-$('.show-cart').on("change", ".item-count", function(event) {
-   var name = $(this).data('name');
-   var count = Number($(this).val());
-  shoppingCart.setCountForItem(name, count);
-  displayCart();
-});
+
 
 displayCart();
 
