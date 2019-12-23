@@ -406,6 +406,21 @@ header.collapsing-parallax + .site-main{
 	z-index: 99;
     }
 
+    .rating {
+  float: right;
+  display: flex;
+  flex-direction: row-reverse;
+  font-family: "Ionicons";
+}
+
+    .modal-content {
+        zoom: 0.75;
+        -moz-transform: scale(0.75);
+        background-color: #fefefe;
+        margin: 5% auto 5% auto; /* 5% from the top, 15% from the bottom and centered */
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+}
 
 
 
@@ -509,7 +524,6 @@ header.collapsing-parallax + .site-main{
 /* Modal Content/Box */
 
 .modal-content {
-    
     background-color: #fefefe;
     margin: 5% auto 5% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
@@ -656,6 +670,7 @@ header.collapsing-parallax + .site-main{
   display: flex;
   flex-direction: row-reverse;
   font-family: "Ionicons";
+  transform: translateY(-10px);
 }
 .rating input {
   opacity: 0;
